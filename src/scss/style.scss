@@ -1,0 +1,42 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+
+@import 'blocks/header.scss';
+@import 'blocks/about';
+@import 'blocks/team';
+@import 'blocks/book';
+@import 'blocks/special';
+@import 'blocks/menu';
+@import 'blocks/events';
+@import 'blocks/gallery';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+@import "base/media"; 
+
+@font-face {
+	font-family: 'Banny';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Banny-Round.otf');
+}
+
+.divider {
+	margin: 30px auto 0;
+	width: 60px;
+	height: 5.11px;
+	background: #e8c300;
+	border-radius: 50px;
+}
+
+.title {
+	font-family: 'Banny';
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	&_white {
+		color: #ffffff;
+	}
+}

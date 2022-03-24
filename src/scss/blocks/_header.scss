@@ -1,0 +1,117 @@
+header {
+	background: url('../../img/header-bg.png') center center/cover no-repeat;
+	min-height: 800px;
+	box-sizing: border-box;
+}
+.header {
+	box-sizing: border-box;
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 25px 100px 0;
+		gap: 0 80px;
+		box-sizing: border-box;
+	}
+	&__list {
+		display: flex;
+		padding-top: 10px;
+		gap: 0 80px;
+		list-style-type: none;
+	}
+	&__links {
+		text-decoration: none;
+		font-family: Open Sans;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 18px;
+		color: #ffffff;
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
+
+.promo {
+	position: relative;
+	&__subtitle {
+		box-sizing: border-box;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 150px;
+		color: #ffffff;
+	}
+	&__title {
+		padding-top: 10px;
+		font-family: 'Banny';
+		font-size: 96px;
+		margin: 0 auto;
+		max-width: 900px;
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__wrapper {
+		margin-top: 30px;
+		display: flex;
+		gap: 10px 40px;
+		justify-content: center;
+	}
+	&__btns {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 20px;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ffffff;
+		border-radius: 5px;
+
+		border: 1px solid $main-color;
+		width: 200px;
+		height: 60px;
+		background-color: $main-color;
+		&__transperent {
+			background-color: transparent;
+			border: 1px solid #fff;
+		}
+		&:hover {
+			color: $main-color;
+			background-color: transparent;
+		}
+	}
+	&__down {
+		margin-top: 82px;
+		display: flex;
+		justify-content: center;
+	}
+	&__social {
+		position: absolute;
+		top: 50%;
+		right: 60px;
+		gap: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__days {
+		position: absolute;
+		left: 0;
+		top: 65%;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 12px;
+		color: #ffffff;
+		transform: rotate(-90deg);
+	}
+}

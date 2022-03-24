@@ -1,0 +1,64 @@
+.team {
+	box-sizing: border-box;
+	min-height: 675px;
+	background: url('../../img/pepper.png') center center/cover no-repeat;
+	padding: 0 50px 50px;
+	&__subtitle {
+		padding-top: 50px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		gap: 0px 120px;
+		flex-wrap: wrap;
+	}
+	&__item2 {
+		padding-top: 180px;
+		max-width: 600px;
+	}
+	&__desc {
+		padding-top: 20px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.9);
+		span {
+			display: block;
+			padding-top: 30px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+	}
+	&__img {
+		height: 475px;
+		position: relative;
+		z-index: 0;
+		filter: drop-shadow(0px 0px 50px #000000);
+		border-radius: 5px;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 250px;
+			height: 250px;
+			top: 30%;
+			left: -15%;
+			z-index: 3;
+			border: 20px solid #e8c300;
+			box-sizing: border-box;
+			filter: drop-shadow(0px 0px 100px #000000);
+			border-radius: 5px;
+		}
+	}
+}
